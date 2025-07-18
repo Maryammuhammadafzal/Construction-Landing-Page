@@ -7,7 +7,7 @@ import CountUp from 'react-countup'
 const HeroPage = () => {
     return (
         <div className='w-full h-screen flex justify-center items-center'>
-            <div className="bg w-full h-full flex justify-center items-center rounded-bl-2xl rounded-br-2xl bg-cover bg-center" style={{ backgroundImage: `url('/images/hero-image.jpg')` }}>
+            <div className="bg w-full h-full flex justify-center items-center rounded-bl-4xl rounded-br-4xl bg-cover bg-center" style={{ backgroundImage: `url('/images/hero-image.jpg')` }}>
                 <div className='w-full h-full flex justify-center items-center relative text-primary flex-col gap-6'>
                     <h1 className='sm:text-5xl xs:text-4xl text-3xl text-center font-extrabold'>
                         Building Your Vision
