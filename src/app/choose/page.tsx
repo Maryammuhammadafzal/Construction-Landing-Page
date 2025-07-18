@@ -8,8 +8,10 @@ const ChoosePage = () => {
     return (
         <div className='w-full h-auto flex md:py-20 sm:py-14 py-7 justify-center items-center'>
             <div className='w-full h-full relative flex md:justify-center items-center'>
-                <div className='absolute w-full h-auto -top-50 left-0 flex justify-center items-center'>
-                    <BackHeading title='Why Choose Us?' />
+                <div className='absolute w-full h-auto lg:-top-30 md:-top-24 sm:-top-16 xs:-top-12 -top-6 left-0 flex justify-center items-center'>
+                    <h2 className='font-bold 2xl:text-[160px] xl:text-[140px] lg:text-[110px] md:text-[84px] sm:text-[70px] xs:text-[52px] 2xs:text-[40px] text-[30px] text-black/5 uppercase'>
+                       Why Choose Us
+                    </h2>
                 </div>
                 <div className='w-full h-full flex justify-center items-center flex-col gap-6'>
                     <Heading title='Why Choose Us?' />

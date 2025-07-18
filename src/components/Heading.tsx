@@ -7,7 +7,7 @@ type HeadingProp = {
 
 const Heading = ({title}: HeadingProp) => {
     return (
-        <h3 className='lg:text-6xl text-5xl text-secondary font-bold'>{title}</h3>
+        <h3 className='lg:text-6xl sm:text-5xl xs:text-4xl text-3xl text-secondary font-bold'>{title}</h3>
 
     )
 }

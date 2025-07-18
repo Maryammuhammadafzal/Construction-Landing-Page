@@ -38,18 +38,18 @@ const ServicesPage = () => {
         },
     ]
     return (
-        <div className='w-full h-auto flex md:py-20 sm:py-14 py-7 justify-center items-center'>
+        <div className='w-full h-auto min-h-screen flex md:py-20 sm:py-14 py-10 justify-center items-center'>
             <div className='w-full h-full relative flex md:justify-center items-center'>
                 <div className='absolute w-full h-auto -top-50 left-0 flex justify-center items-center'>
                     <BackHeading title='Services' />
                 </div>
-                <div className='w-full h-full flex justify-center items-center flex-col gap-6'>
+                <div className='w-full h-full flex items-center flex-col gap-6'>
                     <Heading title='Services' />
 
-                    <div className='flex flex-col lg:gap-6 sm:gap-4 gap-2 h-auto lg:w-[95%] lg:px-0 px-3'>
+                    <div className='flex flex-col lg:gap-6 sm:gap-4 gap-2 lg:w-[95%] lg:px-0 px-3'>
                         {
                             service_data.map((service, index) => (
-                                <div key={index} className='w-full lg:h-[430px] md:h-[400px] sm:h-[350px] xs:h-[300px] h-[610px] flex justify-center items-center '>
+                                <div key={index} className='w-full lg:h-[430px] md:h-[400px] sm:h-[350px] xs:h-[300px] h-[610px] flex justify-center items-start '>
                                     <div className='w-full grid lg:h-[430px] md:h-[400px] sm:h-[350px] h-[300px] lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 sm:gap-4 gap-2'>
                                         <div className={`image lg:col-span-2 cols-span-1 w-full lg:h-[430px] md:h-[400px] sm:h-[350px] h-[300px] flex justify-center items-center rounded-[40px] bg-center bg-cover ${index === 0 ? 'xs:order-1' : 'xs:order-2'} ${index === 2 ? 'xs:order-1' : 'xs:order-2'}  ${index === 4 ? 'xs:order-1' : 'xs:order-2'} `} style={{ backgroundImage: `url(${service.image})` }}>
                                             {/* <Image src={service.image} alt='image' width={500} height={300} className='w-full h-full rounded-[40px] object-cover' /> */}
