@@ -24,16 +24,16 @@ const ChoosePage = () => {
             <div className='w-full h-full z-10 absolute top-0 left-0 flex items-center xl:py-10 py-5 flex-col gap-6'>
                 <Heading title='Why Choose Us?' />
                 <div className='flex md:flex-row flex-col w-full h-full gap-3 justify-between items-center'>
-                    <ul className="content md:w-1/2 w-full h-fit flex items-center justify-center p-6 flex-col gap-5">
+                    <ul className="content md:w-1/2 w-full h-fit flex items-center justify-center xs:p-6 p-3 flex-col gap-5">
                         {choose_data.map((data, index) => (
-                            <li key={index} className='lg:w-[85%] w-full h-fit py-2 text-center border-b border-foreground/80 font-medium xl:text-xl lg:text-lg text-base'>
+                            <li key={index} className='lg:w-[85%] w-full h-fit py-2 text-center border-b border-foreground/80 font-medium xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs'>
                                 {data}
                             </li>
                         ))}
                     </ul>
                     <div className="image md:w-1/2 w-full h-full flex relative gap-5">
-                        <div className='-z-10 xl:h-[450px] xl:w-[450px] lg:w-[400px] lg:h-[400px] md:w-[400px] md:h-[400px] w-[300px] h-[300px] rounded-full bg-secondary absolute xl:right-[15%] xl:bottom-[15%] lg:right-[10%] lg:bottom-[10%] right-0 bottom-0'></div>
-                        <div className='w-full h-full absolute right-0 xl:bottom-100 bottom-80'>
+                        <div className='-z-10 xl:h-[450px] xl:w-[450px] lg:w-[400px] lg:h-[400px] md:w-[320px] md:h-[320px] sm:w-[300px] sm:h-[300px] xs:w-[250px] xs:h-[250px] w-[200px] h-[200px] rounded-full bg-secondary absolute xl:right-[15%] xl:bottom-[15%] lg:right-[10%] lg:bottom-[32%] md:bottom-[45%] md:right-[15%]'></div>
+                        <div className='w-full h-full absolute right-0 xl:bottom-100 lg:bottom-70 md:bottom-50 sm:bottom-100 xs:bottom-80 bottom-60'>
                             <Image src="/images/choose-image.png" alt='image' width={600} height={600} className='w-full' />
                         </div>
                     </div>
