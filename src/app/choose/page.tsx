@@ -13,7 +13,7 @@ const ChoosePage = () => {
         'Focused on safety and sustainability'
     ]
     return (
-        <div className='w-full relative h-[760px] flex flex-col md:py-20 sm:py-14 py-7 '>
+        <div className='w-full relative md:h-[760px] h-[1100px] flex flex-col md:py-20 sm:py-14 py-7 '>
          
                 <div className='absolute w-full -z-10 h-full lg:-top-15 md:-top-10 sm:-top-5 top-0 text-center left-0 flex justify-center'>
                     <h2 className='font-bold 2xl:text-[160px] xl:text-[140px] lg:text-[110px]  text-center md:text-[84px] sm:text-[70px] xs:text-[52px] 2xs:text-[40px] text-[30px] text-black/5 uppercase'>
