@@ -5,27 +5,6 @@ import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 const ContactPage = () => {
-    const testimonial_data = [
-        {
-            name: "Sarah & David M.",
-            image: "/images/client-image1.png",
-            testimonial:
-                '"They built our dream home with care and professionalism. We couldn’t be happier!"',
-        },
-        {
-            name: "Daniel K., Business Owner",
-            image: "/images/client-image2.png",
-            testimonial:
-                '"Our new office building has impressed clients and boosted team morale — highly recommend!"',
-        },
-        {
-            name: "Ayesha R., Property Developer",
-            image: "/images/client-image3.png",
-            testimonial:
-                '"On time, on budget, and great quality. They made the entire process stress-free."',
-        },
-    ];
-
     return (
         <div className='w-full h-auto flex justify-center items-center'>
             <div className='w-full relative md:h-[760px] flex justify-center flex-col'>
