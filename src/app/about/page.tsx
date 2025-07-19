@@ -22,7 +22,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className='md:w-[40%] w-full pr-3 h-full flex justify-center items-center'>
-                        <div className='lg:w-[410px] lg:h-[580px] md:w-[380px] h-[520px] xs:w-[420px] w-full flex justify-center items-center group relative overflow-hidden transition-colors'>
+                        <div className='lg:w-[410px] rounded-[40px] lg:h-[580px] md:w-[380px] h-[520px] xs:w-[420px] w-full flex justify-center items-center group relative overflow-hidden transition-colors'>
                             <div className='w-full h-full relative rounded-[40px] bg-cover bg-center' style={{ backgroundImage: `url('/images/about-image.jpg')` }}>
                                 <div className='overlay w-full h-full bg-black/30 absolute top-0 left-0 rounded-[40px]'></div>
                                 <div className='w-full h-full absolute top-0 left-0 pl-5 z-20 flex flex-col justify-between gap-3'>

@@ -5,27 +5,40 @@ import Image from 'next/image'
 import React from 'react'
 
 const ChoosePage = () => {
+    const choose_data = [
+        'Experienced and licensed professionals',
+        'Uncompromising quality & attention to detail',
+        'Transparent pricing with no hidden costs',
+        'Timely delivery & strong project management',
+        'Focused on safety and sustainability'
+    ]
     return (
-        <div className='w-full h-auto flex md:py-20 sm:py-14 py-7 justify-center items-center'>
-            <div className='w-full h-full relative flex md:justify-center items-center'>
-                <div className='absolute w-full h-auto lg:-top-30 md:-top-24 sm:-top-16 xs:-top-12 -top-6 left-0 flex justify-center items-center'>
-                    <h2 className='font-bold 2xl:text-[160px] xl:text-[140px] lg:text-[110px] md:text-[84px] sm:text-[70px] xs:text-[52px] 2xs:text-[40px] text-[30px] text-black/5 uppercase'>
-                       Why Choose Us
+        <div className='w-full relative h-[760px] flex flex-col md:py-20 sm:py-14 py-7 '>
+         
+                <div className='absolute w-full -z-10 h-full lg:-top-15 md:-top-10 sm:-top-5 top-0 text-center left-0 flex justify-center'>
+                    <h2 className='font-bold 2xl:text-[160px] xl:text-[140px] lg:text-[110px]  text-center md:text-[84px] sm:text-[70px] xs:text-[52px] 2xs:text-[40px] text-[30px] text-black/5 uppercase'>
+                        Why Choose Us
                     </h2>
                 </div>
-                <div className='w-full h-full flex justify-center items-center flex-col gap-6'>
-                    <Heading title='Why Choose Us?' />
-                    <div className=' flex md:flex-row flex-col w-full h-auto gap-3 justify-between items-center'>
-                        <div className="content w-1/2 h-auto flex justify-center items-center p-6 flex-col gap-5">
-
-                        </div>
-                        <div className="image w-1/2 h-auto flex justify-end items-center p-6 relative gap-5">
-                            <div className='w-[500px] -z-10 h-[500px] rounded-full bg-secondary absolute right-0 '></div>
-                            <Image src="/images/choose-image.png" alt='image' width={500} height={300} className='w-full h-full' />
+           
+            <div className='w-full h-full z-10 absolute top-0 left-0 flex items-center xl:py-10 py-5 flex-col gap-6'>
+                <Heading title='Why Choose Us?' />
+                <div className='flex md:flex-row flex-col w-full h-full gap-3 justify-between items-center'>
+                    <ul className="content md:w-1/2 w-full h-fit flex items-center justify-center p-6 flex-col gap-5">
+                        {choose_data.map((data, index) => (
+                            <li key={index} className='lg:w-[85%] w-full h-fit py-2 text-center border-b border-foreground/80 font-medium xl:text-xl lg:text-lg text-base'>
+                                {data}
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="image md:w-1/2 w-full h-full flex relative gap-5">
+                        <div className='-z-10 xl:h-[450px] xl:w-[450px] lg:w-[400px] lg:h-[400px] md:w-[400px] md:h-[400px] w-[300px] h-[300px] rounded-full bg-secondary absolute xl:right-[15%] xl:bottom-[15%] lg:right-[10%] lg:bottom-[10%] right-0 bottom-0'></div>
+                        <div className='w-full h-full absolute right-0 xl:bottom-100 bottom-80'>
+                            <Image src="/images/choose-image.png" alt='image' width={600} height={600} className='w-full' />
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     )
