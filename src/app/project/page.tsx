@@ -51,8 +51,8 @@ const ProjectPage = () => {
 
                     <Accordion type="single" collapsible className='lg:w-[90%] w-[99%]'>
                         {project_data.map((project, index) => (
-                            <AccordionItem key={index} value={`item-${index}`} className='border-b-0 py-2 w-full '>
-                                <AccordionTrigger><p className='font-medium lg:text-lg text-base flex items-center text-[#525252] gap-2'><span className='font-bold lg:text-3xl text-xl'>{project.title} </span> <span>— </span> {project.subtitle}</p></AccordionTrigger>
+                            <AccordionItem key={index} value={`item-${index}`} className='border-b-0 md:py-2 w-full '>
+                                <AccordionTrigger><p className='font-medium lg:text-lg md:text-base sm:text-sm text-xs flex xs:items-center xs:flex-row flex-col text-[#525252] sm:gap-2 gap-1 '><span className='font-bold lg:text-3xl md:text-xl sm:text-lg text-start text-sm'>{project.title} </span> <span className='xs:block hidden'>— </span> {project.subtitle}</p></AccordionTrigger>
                                 <AccordionContent>
                                     {project.content}
                                 </AccordionContent>
