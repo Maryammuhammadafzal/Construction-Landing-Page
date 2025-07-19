@@ -7,7 +7,8 @@ import {
 } from "@/components/ui/accordion"
 import Heading from '@/components/Heading'
 import { Button } from '@/components/ui/button';
-const ProjectPage = () => {
+import Image from 'next/image';
+const TestimonialPage = () => {
     const project_data = [
         {
             title: "The Horizon Residence",
@@ -41,29 +42,30 @@ const ProjectPage = () => {
 
                 <div className='absolute w-full -z-10 h-full xl:-top-15 lg:-top-10 md:-top-10 sm:-top-5 top-0 text-center left-0 flex justify-center'>
                     <h2 className='font-bold 2xl:text-[120px] xl:text-[105px] lg:text-[84px]  text-center md:text-[64px] sm:text-[50px] xs:text-[36px] 2xs:text-[28px] text-[22px] text-black/5 uppercase'>
-                        Projects Showcase
+                        Testimonials
                     </h2>
                 </div>
 
-                <div className='flex flex-col gap-10 justify-center lg:py-10 py-6 items-center w-full h-auto'>
+                <div className='flex flex-col gap-10 justify-center lg:py-10 py-6 items-center w-[90%] h-auto'>
                     <div className='sm:max-w-4xl text-center'>
-                        <Heading title='We let our work speak for itself' />
+                        <Heading title='Testimonials' />
                     </div>
 
-                    <Accordion type="single" collapsible className='lg:w-[90%] w-[99%]'>
-                        {project_data.map((project, index) => (
-                            <AccordionItem key={index} value={`item-${index}`} className='border-b-0 md:py-2 w-full '>
-                                <AccordionTrigger><p className='font-medium lg:text-lg md:text-base sm:text-sm text-xs flex xs:items-center xs:flex-row flex-col text-[#525252] sm:gap-2 gap-1 '><span className='font-bold lg:text-3xl md:text-xl sm:text-lg text-start text-sm'>{project.title} </span> <span className='xs:block hidden'>— </span> {project.subtitle}</p></AccordionTrigger>
-                                <AccordionContent>
-                                    {project.content}
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))
-                        }
-                    </Accordion>
-
-                    <div className='lg:w-[90%] w-[99%] h-auto py-4'>
-                        <Button className='bg-secondary shadow-xl shadow-black/30 px-8 py-5'>View Full Portfolio</Button>
+                    <div className='flex md:flex-row w-full h-auto flex-col gap-4 justify-center items-center'>
+                        <div className='w-1/2 h-auto flex flex-col gap-6'>
+                            <div className='w-full flex gap-3'>
+                                <div className="profile w-[130px] h-full flex justify-center items-center">
+                                    <Image src='/images/client-image1.png' alt='image' width={120} height={120} className='rounded-full' />
+                                </div>
+                                <div className='flex flex-col gap-3'>
+                                    <h3 className='text-3xl font-medium'>Sarah & David M.</h3>
+                                    <p className='text-xl font-medium w-xs'>"They built our dream home with care and professionalism. We couldn’t be happier!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='w-1/2 h-full flex justify-center items-center'>
+                            <Image src='/images/testimonial-image.jpg' alt='image' width={400} height={500} className='rounded-2xl' />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,4 +73,4 @@ const ProjectPage = () => {
     )
 }
 
-export default ProjectPage
+export default TestimonialPage
