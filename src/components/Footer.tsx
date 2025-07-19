@@ -32,11 +32,11 @@ const Footer = () => {
                         <div className='flex flex-col gap-3 max-xs:w-full'>
                             <h3 className='text-2xl font-semibold'>Services</h3>
                             <ul className='flex flex-col gap-2'>
-                                <li><Link href='/'>Residential Construction</Link></li>
-                                <li><Link href='/'>Commercial Construction</Link></li>
-                                <li><Link href='/'>Industrial & Infrastructure</Link></li>
-                                <li><Link href='/'>Renovation & Remodeling</Link></li>
-                                <li><Link href='/'>Design & Planning</Link></li>
+                                <li><Link href='#residential'>Residential Construction</Link></li>
+                                <li><Link href='#commercial'>Commercial Construction</Link></li>
+                                <li><Link href='#industrial'>Industrial & Infrastructure</Link></li>
+                                <li><Link href='#renovation'>Renovation & Remodeling</Link></li>
+                                <li><Link href='#design'>Design & Planning</Link></li>
                             </ul>
                         </div>
                         <div className='flex max-lg:w-[90%] flex-col gap-3 max-md:w-auto max-sm:w-full'>

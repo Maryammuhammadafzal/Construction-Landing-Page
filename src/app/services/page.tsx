@@ -7,30 +7,35 @@ const ServicesPage = () => {
 
     const service_data = [
         {
+            id:'residential',
             title: 'Residential Construction',
             description: 'Create the home you’ve always dreamed of — custom-built with precision and care. From single-family homes to luxury estates, we craft living spaces tailored to your needs and style.',
             image: '/images/service-image1.jpg',
             color: '#EAA1B7'
         },
         {
+             id:'commercial',
             title: 'Commercial Construction',
             description: 'Build a space that reflects your business’s strength and professionalism. Whether it’s offices, retail outlets, or hospitality, we deliver functional and inspiring commercial environments.',
             image: '/images/service-image2.jpg',
             color: '#2D8698'
         },
         {
+             id:'industrial',
             title: 'Industrial & Infrastructure',
             description: 'Large-scale projects demand expertise and efficiency. We specialize in warehouses, factories, and infrastructural developments with robust planning and execution.',
             image: '/images/service-image3.jpg',
             color: '#D37513'
         },
         {
+             id:'renovation',
             title: 'Renovation & Remodeling',
             description: 'Breathe new life into existing spaces. Our team revitalizes homes and buildings while preserving their character and charm.',
             image: '/images/service-image4.jpg',
             color: '#CEB381'
         },
         {
+             id:'design',
             title: 'Design & Planning',
             description: 'Not just builders — we also assist with creative design, architectural planning, and obtaining permits, ensuring a seamless start-to-finish process.',
             image: '/images/service-image5.jpg',
@@ -49,7 +54,7 @@ const ServicesPage = () => {
                     <div className='flex flex-col lg:gap-6 sm:gap-4 gap-2 lg:w-[95%] lg:px-0 px-3'>
                         {
                             service_data.map((service, index) => (
-                                <div key={index} className='w-full lg:h-[430px] md:h-[400px] sm:h-[350px] xs:h-[300px] h-[610px] flex justify-center items-start '>
+                                <div key={index} id={service.id} className='w-full lg:h-[430px] md:h-[400px] sm:h-[350px] xs:h-[300px] h-[610px] flex justify-center items-start '>
                                     <div className='w-full grid lg:h-[430px] md:h-[400px] sm:h-[350px] h-[300px] lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 sm:gap-4 gap-2'>
                                         <div className={`image lg:col-span-2 cols-span-1 w-full lg:h-[430px] md:h-[400px] sm:h-[350px] h-[300px] flex justify-center items-center rounded-[40px] bg-center bg-cover ${index === 0 ? 'xs:order-1' : 'xs:order-2'} ${index === 2 ? 'xs:order-1' : 'xs:order-2'}  ${index === 4 ? 'xs:order-1' : 'xs:order-2'} `} style={{ backgroundImage: `url(${service.image})` }}>
                                             {/* <Image src={service.image} alt='image' width={500} height={300} className='w-full h-full rounded-[40px] object-cover' /> */}
