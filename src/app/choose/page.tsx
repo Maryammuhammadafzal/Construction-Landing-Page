@@ -1,4 +1,3 @@
-import BackHeading from '@/components/BackHeading'
 import Heading from '@/components/Heading'
 import Image from 'next/image'
 

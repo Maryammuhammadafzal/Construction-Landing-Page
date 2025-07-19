@@ -1,9 +1,5 @@
 import React from 'react'
-import Heading from '@/components/Heading'
-
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
 const Footer = () => {
 
@@ -27,10 +23,10 @@ const Footer = () => {
                             <h3 className='text-2xl font-semibold '>Quick Links</h3>
                             <ul className='flex flex-col gap-2 '>
                                 <li><Link href='/'>Home</Link></li>
-                                <li><Link href='/'>About Us</Link></li>
-                                <li><Link href='/'>Services</Link></li>
-                                <li><Link href='/'>Projects</Link></li>
-                                <li><Link href='/'>Contact Us</Link></li>
+                                <li><Link href='/about'>About Us</Link></li>
+                                <li><Link href='/services'>Services</Link></li>
+                                <li><Link href='/project'>Projects</Link></li>
+                                <li><Link href='/contact'>Contact Us</Link></li>
                             </ul>
                         </div>
                         <div className='flex flex-col gap-3 max-xs:w-full'>
