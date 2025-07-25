@@ -49,7 +49,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='md:w-[70%] w-full copyright h-fit flex justify-center items-center'>
-                        <p className='md:text-base text-sm text-center'>© 2021 all copyright reserved. All Rights Reserved. <Link href='/' className='underline'>Rootlet Solution</Link></p>
+                        <p className='md:text-base text-sm text-center'>© 2021 all copyright reserved. All Rights Reserved. <Link target="_blank" href='/' className='underline'>Rootlet Solution</Link></p>
                     </div>
                 </div>
             </div>
